@@ -94,36 +94,3 @@ npm run dev
 cd workstation-manager
 npm start
 ```
-
-The application will be available at:
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:5000
-
-## API Endpoints
-
-### Bill Transactions
-- GET `/api/bill-transactions` - Get all transactions with filters
-- POST `/api/bill-transactions` - Create new transaction
-- PATCH `/api/bill-transactions/:id` - Update transaction
-- DELETE `/api/bill-transactions/:id` - Delete transaction
-- GET `/api/bill-transactions/export` - Export to Excel
-
-### Yearly Consolidated
-- GET `/api/yearly-consolidated` - Get yearly reports
-- GET `/api/yearly-consolidated/stats` - Get aggregated statistics
-
-### Workstations
-- GET `/api/workstations` - Get all workstations
-- POST `/api/workstations` - Create new workstation
-- PATCH `/api/workstations/:id` - Update workstation
-- DELETE `/api/workstations/:id` - Delete workstation
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details. 
