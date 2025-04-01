@@ -1,16 +1,9 @@
-# MERN-Stack-Assignment
-The assignment received from Malabar College of Engineering and Technology for the MERN Stack Developer position.
+# Workstation Manager System
 
-## Overview
-This project is a MERN (MongoDB, Express, React, Node.js) stack application developed as part of the technical evaluation for the MERN Stack Developer position at Malabar College of Engineering and Technology.
+A comprehensive workstation management system with bill transaction reporting and yearly consolidated reports.
 
-## Features
-- Fully responsive frontend built using **React** and **Tailwind CSS**.
-- Backend powered by **Node.js**, **Express.js**, and **MongoDB**.
-- RESTful API for handling CRUD operations.
-- State management with React Context API.
+## Technologies Used
 
-## Tech Stack
 ### Frontend
 - **React.js** - Frontend framework
 - **Tailwind CSS** - Utility-first CSS framework for styling
@@ -28,15 +21,109 @@ This project is a MERN (MongoDB, Express, React, Node.js) stack application deve
 - **ExcelJS** - Excel file generation
 - **CORS** - Cross-Origin Resource Sharing
 - **dotenv** - Environment variables management
-## Installation & Setup
+
+## Features
+
+### Bill Transaction Management
+- View and manage bill transactions
+- Advanced filtering and search capabilities
+- Export to Excel functionality
+- Real-time statistics and reporting
+- Payment mode tracking
+- Date range filtering
+- Amount range filtering
+
+### Yearly Consolidated Reports
+- Comprehensive yearly statistics
+- Workstation performance metrics
+- Financial analysis
+- Occupancy tracking
+- Maintenance scheduling
+- Export functionality
+
+### Workstation Management
+- Workstation status tracking
+- Hardware specifications management
+- Location management
+- Maintenance scheduling
+- Performance monitoring
+
+## Getting Started
 
 ### Prerequisites
-Ensure you have the following installed:
-- Node.js 
-- MongoDB (if using MongoDB)
-- Git
+- Node.js (v14 or higher)
+- MongoDB
+- npm or yarn
 
-### Clone the Repository
+### Installation
+
+1. Clone the repository
 ```bash
-git clone https://github.com/gishnudev/MERN-Stack-Assignment
-cd MERN-Stack-Assignment
+git clone <repository-url>
+```
+
+2. Install Frontend Dependencies
+```bash
+cd workstation-manager
+npm install
+```
+
+3. Install Backend Dependencies
+```bash
+cd workstation-manager-backend
+npm install
+```
+
+4. Set up environment variables
+Create a `.env` file in the backend directory with:
+```
+MONGODB_URI=mongodb://localhost:27017/workstation-manager
+PORT=5000
+```
+
+### Running the Application
+
+1. Start the Backend Server
+```bash
+cd workstation-manager-backend
+npm run dev
+```
+
+2. Start the Frontend Development Server
+```bash
+cd workstation-manager
+npm start
+```
+
+The application will be available at:
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:5000
+
+## API Endpoints
+
+### Bill Transactions
+- GET `/api/bill-transactions` - Get all transactions with filters
+- POST `/api/bill-transactions` - Create new transaction
+- PATCH `/api/bill-transactions/:id` - Update transaction
+- DELETE `/api/bill-transactions/:id` - Delete transaction
+- GET `/api/bill-transactions/export` - Export to Excel
+
+### Yearly Consolidated
+- GET `/api/yearly-consolidated` - Get yearly reports
+- GET `/api/yearly-consolidated/stats` - Get aggregated statistics
+
+### Workstations
+- GET `/api/workstations` - Get all workstations
+- POST `/api/workstations` - Create new workstation
+- PATCH `/api/workstations/:id` - Update workstation
+- DELETE `/api/workstations/:id` - Delete workstation
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details. 
