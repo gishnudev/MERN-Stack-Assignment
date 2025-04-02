@@ -59,7 +59,7 @@ A comprehensive workstation management system with bill transaction reporting an
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/gishnudev/MERN-Stack-Assignment
 ```
 
 2. Install Frontend Dependencies
